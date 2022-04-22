@@ -15,6 +15,7 @@ https://tsjessicaweng.github.io/coursera-test.github.io/module5_solution/
 ### Mod1 Solution
 
 ### Mod2 Solution
+https://tsjessicaweng.github.io/coursera-test.github.io/mod2_solution/
 
 ### Mod3 Solution
 
