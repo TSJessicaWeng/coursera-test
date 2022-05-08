@@ -15,9 +15,9 @@ function FoundItemsDirective(){
 			items: '<',
 			onRemove: '&'
 		},
-		controller:FoundItemsDirectiveController,
-		controllerAs:'list',
-		bindToController:true
+		controller: FoundItemsDirectiveController,
+		controllerAs: 'list',
+		bindToController: true
 	};
 
 	return ddo;
@@ -67,7 +67,7 @@ function NarrowItDownController(MenuSearchService){
 	menu.removeItem = function (itemIndex){
 		this.lastRemoved =  "Last item removed was " + menu.found[itemIndex].name;
 		menu.found.splice(itemIndex, 1);
-	}
+	};
 
 }
 
@@ -104,7 +104,7 @@ function MenuSearchService ($http, ApiBasePath) {
 				if (item.description.indexOf(searchTerm) !== -1){
 					foundItems.push(item);
 				}
-			}
+			};
 			//return processed items
 			return foundItems;
 		});
