@@ -56,7 +56,8 @@ function NarrowItDownController(MenuSearchService){
 				menu.found = response;
 			})
 			.catch(function (error){
-				console.log("Something went wrong.");
+				console.log(error);
+				
 			});
 		} else {
 			menu.found = [];
