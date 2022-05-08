@@ -1,0 +1,9 @@
+<ul>
+  <li ng-repeat="item in list.items">
+    <p>({{item.short_name}}) {{item.name}}:</p>
+    Description: {{item.description}}
+    <button class="form-group" ng-click="list.onRemove({index: $index});">Don't want this one!</button>
+  </li>
+</ul>
+
+<div class="form-group" ng-if="list.checkFound()">Nothing found!</div>
